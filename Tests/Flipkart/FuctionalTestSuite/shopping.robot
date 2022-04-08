@@ -1,10 +1,7 @@
 *** Settings ***
-Library  SeleniumLibrary
+Resource  ../../../Resources/MyKeywords.robot
 
 
-*** Variables ***
-${search_flipkart}  Flipkart
-${url}  https://www.google.com/
 
 *** Test Cases ***
 Google search
@@ -36,16 +33,8 @@ Flipkart product buy
     switch window  title:APPLE iPhone 13 ( 128 GB GB Storage, 0 GB RAM ) Online at Best Price On Flipkart.com
     click button  class:_2KpZ6l
     sleep  5s
-
     stop testcase
 
-*** Keywords ***
-start testcase
-    Open browser  ${url}  chrome
-    maximize browser window
-stop testcase
-    close browser
-flipkart search
-    input text  name:q  iphone13
-    click button  class:L0Z3Pu
+
+
 
