@@ -2,6 +2,8 @@
 Library  SeleniumLibrary
 
 *** Variables ***
+${search_parameter}  Harman
+${url}   https://www.google.com/
 
 *** Test Cases ***
 login page test case
@@ -20,9 +22,11 @@ Dashboard test case
 
 Google test case
     [Documentation]  Google test
-    Open Browser    https://www.google.com/  chrome
-    Input Text  name:q  Harman
+    Open Browser  ${url}     chrome
+    search data
     Submit form
     Close Browser
 
 *** Keywords ***
+search data
+    Input Text  name:q  ${search_parameter}

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0 (Python 3.10.2 on win32)" generated="20220408 22:55:55.316" rpa="false" schemaversion="3">
+<suite id="s1" name="Shopping" source="C:\Users\SHUBHENDRA SINGH\PycharmProjects\RoboticFramework\Tests\Flipkart\FuctionalTestSuite\shopping.robot">
+<test id="s1-t1" name="Google search" line="10">
+<kw name="start testcase">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220408 22:55:55.685" level="INFO">Opening browser 'chrome' to base url 'https://www.google.com/'.</msg>
+<status status="PASS" starttime="20220408 22:55:55.685" endtime="20220408 22:56:02.490"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220408 22:56:02.490" endtime="20220408 22:56:02.621"/>
+</kw>
+<status status="PASS" starttime="20220408 22:55:55.684" endtime="20220408 22:56:02.621"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name:q</arg>
+<arg>${search_flipkart}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220408 22:56:02.621" level="INFO">Typing text 'Flipkart' into text field 'name:q'.</msg>
+<status status="PASS" starttime="20220408 22:56:02.621" endtime="20220408 22:56:02.721"/>
+</kw>
+<kw name="Submit Form" library="SeleniumLibrary">
+<doc>Submits a form identified by ``locator``.</doc>
+<msg timestamp="20220408 22:56:02.723" level="INFO">Submitting form 'None'.</msg>
+<status status="PASS" starttime="20220408 22:56:02.723" endtime="20220408 22:56:05.324"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>class:LC20lb</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220408 22:56:05.324" level="INFO">Clicking element 'class:LC20lb'.</msg>
+<status status="PASS" starttime="20220408 22:56:05.324" endtime="20220408 22:56:11.472"/>
+</kw>
+<doc>google search test</doc>
+<tag>Google</tag>
+<status status="PASS" starttime="20220408 22:55:55.682" endtime="20220408 22:56:11.472"/>
+</test>
+<test id="s1-t2" name="Flipkart Product Search" line="18">
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220408 22:56:13.491" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220408 22:56:11.474" endtime="20220408 22:56:13.491"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>class:_2KpZ6l</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220408 22:56:13.491" level="INFO">Clicking button 'class:_2KpZ6l'.</msg>
+<status status="PASS" starttime="20220408 22:56:13.491" endtime="20220408 22:56:13.637"/>
+</kw>
+<kw name="flipkart search">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name:q</arg>
+<arg>iphone13</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220408 22:56:13.637" level="INFO">Typing text 'iphone13' into text field 'name:q'.</msg>
+<status status="PASS" starttime="20220408 22:56:13.637" endtime="20220408 22:56:13.771"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>class:L0Z3Pu</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220408 22:56:13.771" level="INFO">Clicking button 'class:L0Z3Pu'.</msg>
+<status status="PASS" starttime="20220408 22:56:13.771" endtime="20220408 22:56:13.892"/>
+</kw>
+<status status="PASS" starttime="20220408 22:56:13.637" endtime="20220408 22:56:13.892"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220408 22:56:15.901" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220408 22:56:13.893" endtime="20220408 22:56:15.901"/>
+</kw>
+<doc>searching product on flipkart website</doc>
+<tag>flipkart</tag>
+<status status="PASS" starttime="20220408 22:56:11.473" endtime="20220408 22:56:15.901"/>
+</test>
+<test id="s1-t3" name="Flipkart product selection" line="27">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//html/body/div[1]/div/div[3]/div[1]/div[2]/div[3]/div/div/div/a/div[2]/div[1]/div[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220408 22:56:15.904" level="INFO">Clicking element 'xpath=//html/body/div[1]/div/div[3]/div[1]/div[2]/div[3]/div/div/div/a/div[2]/div[1]/div[1]'.</msg>
+<status status="PASS" starttime="20220408 22:56:15.904" endtime="20220408 22:56:16.005"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220408 22:56:18.014" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220408 22:56:16.006" endtime="20220408 22:56:18.014"/>
+</kw>
+<doc>selecting an product</doc>
+<tag>flipkart</tag>
+<status status="PASS" starttime="20220408 22:56:15.903" endtime="20220408 22:56:18.015"/>
+</test>
+<test id="s1-t4" name="Flipkart product buy" line="33">
+<kw name="Switch Window" library="SeleniumLibrary">
+<arg>title:APPLE iPhone 13 ( 128 GB GB Storage, 0 GB RAM ) Online at Best Price On Flipkart.com</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" starttime="20220408 22:56:18.017" endtime="20220408 22:56:21.024"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>class:_2KpZ6l</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220408 22:56:21.024" level="INFO">Clicking button 'class:_2KpZ6l'.</msg>
+<status status="PASS" starttime="20220408 22:56:21.024" endtime="20220408 22:56:21.271"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220408 22:56:26.277" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220408 22:56:21.271" endtime="20220408 22:56:26.277"/>
+</kw>
+<kw name="stop testcase">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220408 22:56:26.277" endtime="20220408 22:56:28.458"/>
+</kw>
+<status status="PASS" starttime="20220408 22:56:26.277" endtime="20220408 22:56:28.458"/>
+</kw>
+<doc>Product purchase</doc>
+<tag>flipkart</tag>
+<status status="PASS" starttime="20220408 22:56:18.016" endtime="20220408 22:56:28.458"/>
+</test>
+<status status="PASS" starttime="20220408 22:55:55.321" endtime="20220408 22:56:28.461"/>
+</suite>
+<statistics>
+<total>
+<stat pass="4" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="3" fail="0" skip="0">flipkart</stat>
+<stat pass="1" fail="0" skip="0">Google</stat>
+</tag>
+<suite>
+<stat pass="4" fail="0" skip="0" id="s1" name="Shopping">Shopping</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
